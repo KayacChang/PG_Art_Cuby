@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cuby/static/css/main.fa6480ce.chunk.css",
+    "main.js": "/cuby/static/js/main.4bb1279a.chunk.js",
+    "main.js.map": "/cuby/static/js/main.4bb1279a.chunk.js.map",
+    "runtime-main.js": "/cuby/static/js/runtime-main.052382db.js",
+    "runtime-main.js.map": "/cuby/static/js/runtime-main.052382db.js.map",
+    "static/js/2.befda453.chunk.js": "/cuby/static/js/2.befda453.chunk.js",
+    "static/js/2.befda453.chunk.js.map": "/cuby/static/js/2.befda453.chunk.js.map",
+    "static/js/3.5e75886a.chunk.js": "/cuby/static/js/3.5e75886a.chunk.js",
+    "static/js/3.5e75886a.chunk.js.map": "/cuby/static/js/3.5e75886a.chunk.js.map",
+    "index.html": "/cuby/index.html",
+    "precache-manifest.ab72a8ad8f0c4e2a35bba03c1e34f114.js": "/cuby/precache-manifest.ab72a8ad8f0c4e2a35bba03c1e34f114.js",
+    "service-worker.js": "/cuby/service-worker.js",
+    "static/css/main.fa6480ce.chunk.css.map": "/cuby/static/css/main.fa6480ce.chunk.css.map",
+    "static/js/2.befda453.chunk.js.LICENSE.txt": "/cuby/static/js/2.befda453.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.052382db.js",
+    "static/js/2.befda453.chunk.js",
+    "static/css/main.fa6480ce.chunk.css",
+    "static/js/main.4bb1279a.chunk.js"
+  ]
+}

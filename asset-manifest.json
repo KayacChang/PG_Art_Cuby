@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/PG_Art_Cuby/static/css/main.fa6480ce.chunk.css",
-    "main.js": "/PG_Art_Cuby/static/js/main.4bb1279a.chunk.js",
-    "main.js.map": "/PG_Art_Cuby/static/js/main.4bb1279a.chunk.js.map",
-    "runtime-main.js": "/PG_Art_Cuby/static/js/runtime-main.94bde6ed.js",
-    "runtime-main.js.map": "/PG_Art_Cuby/static/js/runtime-main.94bde6ed.js.map",
-    "static/js/2.befda453.chunk.js": "/PG_Art_Cuby/static/js/2.befda453.chunk.js",
-    "static/js/2.befda453.chunk.js.map": "/PG_Art_Cuby/static/js/2.befda453.chunk.js.map",
-    "static/js/3.5e75886a.chunk.js": "/PG_Art_Cuby/static/js/3.5e75886a.chunk.js",
-    "static/js/3.5e75886a.chunk.js.map": "/PG_Art_Cuby/static/js/3.5e75886a.chunk.js.map",
-    "index.html": "/PG_Art_Cuby/index.html",
-    "precache-manifest.bab071526e5d8c5f1c62d5ceb01fbdc1.js": "/PG_Art_Cuby/precache-manifest.bab071526e5d8c5f1c62d5ceb01fbdc1.js",
-    "service-worker.js": "/PG_Art_Cuby/service-worker.js",
-    "static/css/main.fa6480ce.chunk.css.map": "/PG_Art_Cuby/static/css/main.fa6480ce.chunk.css.map",
-    "static/js/2.befda453.chunk.js.LICENSE.txt": "/PG_Art_Cuby/static/js/2.befda453.chunk.js.LICENSE.txt"
+    "main.css": "/cuby/static/css/main.fa6480ce.chunk.css",
+    "main.js": "/cuby/static/js/main.4bb1279a.chunk.js",
+    "main.js.map": "/cuby/static/js/main.4bb1279a.chunk.js.map",
+    "runtime-main.js": "/cuby/static/js/runtime-main.052382db.js",
+    "runtime-main.js.map": "/cuby/static/js/runtime-main.052382db.js.map",
+    "static/js/2.befda453.chunk.js": "/cuby/static/js/2.befda453.chunk.js",
+    "static/js/2.befda453.chunk.js.map": "/cuby/static/js/2.befda453.chunk.js.map",
+    "static/js/3.5e75886a.chunk.js": "/cuby/static/js/3.5e75886a.chunk.js",
+    "static/js/3.5e75886a.chunk.js.map": "/cuby/static/js/3.5e75886a.chunk.js.map",
+    "index.html": "/cuby/index.html",
+    "precache-manifest.ab72a8ad8f0c4e2a35bba03c1e34f114.js": "/cuby/precache-manifest.ab72a8ad8f0c4e2a35bba03c1e34f114.js",
+    "service-worker.js": "/cuby/service-worker.js",
+    "static/css/main.fa6480ce.chunk.css.map": "/cuby/static/css/main.fa6480ce.chunk.css.map",
+    "static/js/2.befda453.chunk.js.LICENSE.txt": "/cuby/static/js/2.befda453.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.94bde6ed.js",
+    "static/js/runtime-main.052382db.js",
     "static/js/2.befda453.chunk.js",
     "static/css/main.fa6480ce.chunk.css",
     "static/js/main.4bb1279a.chunk.js"

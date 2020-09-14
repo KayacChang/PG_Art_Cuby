@@ -1,69 +1,19 @@
-import { Application, Container, Graphics, Text } from "pixi.js";
+import { Application } from "pixi.js";
+import Cuby from "./Cuby";
 
-function ellipse(size: number, color: number) {
-  const ratio = 2.5;
-  const graphic = new Graphics();
-  graphic.beginFill(color);
-  graphic.drawEllipse(0, 0, size / ratio, size);
-  graphic.beginHole();
+type Color =
+  | "blue"
+  | "red"
+  | "yellow"
+  | "green"
+  | "orange"
+  | "purple"
+  | "indigo";
+export default function main(app: Application, color: Color) {
+  const block = Cuby(color, 100);
 
-  const diff = size / 5;
-  graphic.drawEllipse(0, 0, (size - diff) / ratio, size - diff / ratio);
-  graphic.endHole();
-  return graphic;
-}
+  block.position.set(app.screen.width / 2, app.screen.height / 2);
+  block.pivot.set(block.width / 2, block.height / 2);
 
-function circle(size: number, color: number) {
-  const graphic = new Graphics();
-  graphic.beginFill(color);
-  graphic.drawCircle(0, 0, size);
-  graphic.endFill();
-  return graphic;
-}
-
-function Logo(color: number) {
-  const logo = new Container();
-
-  const el1 = ellipse(180, color);
-
-  const el2 = ellipse(180, color);
-  el2.rotation = Math.PI / 3;
-
-  const el3 = ellipse(180, color);
-  el3.rotation = -Math.PI / 3;
-
-  logo.addChild(el1, el2, el3, circle(35, color));
-
-  return logo;
-}
-
-function init({ stage, screen, ticker }: Application) {
-  const root = new Container();
-  stage.addChild(root);
-
-  const background = new Graphics();
-  background.beginFill(0x282c34);
-  background.drawRect(0, 0, screen.width, screen.height);
-  background.endFill();
-  root.addChild(background);
-
-  const logo = Logo(0xe91e63);
-  logo.position.set(screen.width / 2, (screen.height * 43) / 100);
-  root.addChild(logo);
-
-  const text = new Text("Edit src/App.ts and save to reload.", {
-    fontSize: 34,
-    fill: 0xffffff,
-  });
-  text.anchor.set(0.5, 0);
-  text.position.set(screen.width / 2, (screen.height * 67) / 100);
-  root.addChild(text);
-
-  ticker.add((delta) => {
-    logo.rotation += (Math.PI / 480) * delta;
-  });
-}
-
-export default function main(app: Application) {
-  init(app);
+  app.stage.addChild(block);
 }

@@ -1,19 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Canvas from "./Canvas";
-import App from "./App";
+import Game from "./App";
 
 const config = {
-  width: 1920,
-  height: 1080,
+  backgroundColor: 0xffffff,
   antialias: true,
 };
+type Color =
+  | "blue"
+  | "red"
+  | "yellow"
+  | "green"
+  | "orange"
+  | "purple"
+  | "indigo";
+
+function App() {
+  const [color, setColor] = useState("blue");
+
+  return (
+    <div>
+      <Canvas init={(app) => Game(app, color as Color)} {...config} />
+      <div
+        style={{
+          position: "absolute",
+        }}
+        ref={(ref: HTMLDivElement) => {
+          if (!ref || !ref.parentElement) {
+            return;
+          }
+          const { offsetWidth, offsetHeight, offsetTop } = ref.parentElement;
+          Object.assign(ref.style, {
+            top: `${offsetTop}px`,
+            width: `${offsetWidth}px`,
+            height: `${offsetHeight}px`,
+          });
+        }}
+      >
+        <select name="color" onChange={(event) => setColor(event.target.value)}>
+          {["blue", "red", "yellow", "green", "orange", "purple", "indigo"].map(
+            (value) => (
+              <option key={value} value={value}>
+                {value}
+              </option>
+            )
+          )}
+        </select>
+      </div>
+    </div>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Canvas init={App} {...config} />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

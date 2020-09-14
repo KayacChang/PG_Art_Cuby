@@ -13,10 +13,15 @@ code {
 }
 
 body {
+  background: #282c34;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #282c34;
 }
 
 canvas {
